@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route('/')
 def hello():
     secret = os.environ.get('MY_SECRET_MESSAGE', 'не задана')
-    return f"Приложение работает! Секрет: {secret}"
+    return f"Приложение работает! Версия 2. Секрет: {secret}"
 
 
 if __name__ == '__main__':
